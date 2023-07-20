@@ -1,0 +1,34 @@
+void main() {
+
+var lists = [10,20,30,40];
+lists.add(50); // adding value in lists
+
+var lis = [];
+lis.add('mahad');
+lis.add('raza');
+lis.add('syed');
+//lis.addAll(lists); //adding existing list value in another list
+
+  lis.insert(1, 'bukhari'); //inserting a value in center of list
+  lis.insertAll(2, lists); // inserting a existing list in center of list
+
+ // lis[0]= "mahad shah"; // updating or rewriting the value in list
+
+lis.replaceRange(0, 3, [5,12,14]); // replacing values in lists
+
+  //lis.removeLast();
+  //lis.removeAt(1);
+
+//  lis.removeRange(0, 7);
+
+
+print('Length: ${lis.length}');
+print('Reversed: ${lis.reversed}');
+print('First: ${lis.first}');
+print('Last: ${lis.last}');
+print('isempty: ${lis.isEmpty}');
+print('isnotempty: ${lis.isNotEmpty}');
+  print('5th index: ${lis.elementAt(5)}');
+
+
+}
